@@ -7,7 +7,7 @@
 ;;   version: 0.1
 ;;
 (ns clj-fuzzy.lancaster
-  (:use [clj-fuzzy.helpers :only [re-test?
+  (:require [clj-fuzzy.helpers :refer [re-test?
                                   clean-non-alphabetical]]))
 
 ;; Rules

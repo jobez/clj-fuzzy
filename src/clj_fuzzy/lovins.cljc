@@ -12,8 +12,8 @@
 ;;   Note: A vast majority of the algorithm can be improved codewise.
 ;;
 (ns clj-fuzzy.lovins
-  (:require [clojure.string])
-  (:use [clj-fuzzy.helpers :only [re-test?
+  (:require [clojure.string]
+            [clj-fuzzy.helpers :refer [re-test?
                                   batch-replace]]))
 
 ;; Endings

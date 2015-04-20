@@ -7,12 +7,11 @@
 ;;   Version: 0.1
 ;;
 (ns clj-fuzzy.nysiis
-  (:require [clojure.string :as s])
-  (:use [clj-fuzzy.helpers
-         :only [batch-replace
-                distinct-consecutive
-                clean-non-alphabetical
-                eat]]))
+  (:require [clojure.string :as s]
+            [clj-fuzzy.helpers :refer [batch-replace
+                                       distinct-consecutive
+                                       clean-non-alphabetical
+                                       eat]]))
 
 (def ^:private patterns
   {:original

@@ -7,8 +7,8 @@
 ;;   version: 0.1
 ;;
 (ns clj-fuzzy.porter
-  (:require clojure.string)
-  (:use [clj-fuzzy.helpers :only [re-test? chop]]))
+  (:require clojure.string
+            [clj-fuzzy.helpers :refer [re-test? chop]]))
 
 ;;-----------------
 ;; Stemmer's lists

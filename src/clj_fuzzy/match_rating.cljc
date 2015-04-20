@@ -10,10 +10,10 @@
 ;; TODO: Optimize. I cannot believe this cannot be written
 ;; in a more efficient and elegant way.
 (ns clj-fuzzy.match-rating
-  (:require clojure.string)
-  (:use [clj-fuzzy.helpers :only [eat
-                                  clean-non-alphabetical
-                                  distinct-consecutive]]))
+  (:require clojure.string
+            [clj-fuzzy.helpers :refer [eat
+                                       clean-non-alphabetical
+                                       distinct-consecutive]]))
 
 ;; Utilities
 (defn- drop-non-leading-vowel [word]

@@ -7,12 +7,12 @@
 ;;   Version: 0.1
 ;;
 (ns clj-fuzzy.cologne
-  (:require clojure.string)
-  (:use [clj-fuzzy.helpers :only [clean-non-alphabetical
-                                  distinct-consecutive
-                                  batch-replace
-                                  in?
-                                  not-in?]]))
+  (:require clojure.string
+            [clj-fuzzy.helpers :refer [clean-non-alphabetical
+                                       distinct-consecutive
+                                       batch-replace
+                                       in?
+                                       not-in?]]))
 
 ;; Utilities
 (defn- partition-with-previous-and-next

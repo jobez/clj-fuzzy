@@ -10,8 +10,8 @@
 ;;
 (ns clj-fuzzy.dice
   (:require clojure.string
-            clojure.set)
-  (:use [clj-fuzzy.helpers :only [bigrams]]))
+            clojure.set
+            [clj-fuzzy.helpers :refer [bigrams]]))
 
 ;; Utilities
 (defn- letter-pairs

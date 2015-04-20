@@ -7,8 +7,8 @@
 ;;   Version: 0.1
 ;;
 (ns clj-fuzzy.soundex
-  (:require clojure.string)
-  (:use [clj-fuzzy.helpers :only [clean-non-alphabetical
+  (:require clojure.string
+            [clj-fuzzy.helpers :refer [clean-non-alphabetical
                                   distinct-consecutive]]))
 
 ;; Utilities

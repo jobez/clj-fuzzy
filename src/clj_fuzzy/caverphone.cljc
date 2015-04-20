@@ -8,8 +8,8 @@
 ;;   Revisited version: http://caversham.otago.ac.nz/files/working/ctp150804.pdf
 ;;
 (ns clj-fuzzy.caverphone
-  (:require clojure.string)
-  (:use [clj-fuzzy.helpers :only [clean-non-alphabetical
+  (:require clojure.string
+            [clj-fuzzy.helpers :refer [clean-non-alphabetical
                                   batch-replace]]))
 
 (def ^:private replacements

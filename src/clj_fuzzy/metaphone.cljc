@@ -9,8 +9,8 @@
 ;;     https://github.com/threedaymonk/text/blob/master/lib/text/metaphone.rb
 ;;
 (ns clj-fuzzy.metaphone
-  (:require clojure.string)
-  (:use [clj-fuzzy.helpers :only [batch-replace clean-non-alphabetical]]))
+  (:require clojure.string
+            [clj-fuzzy.helpers :refer [batch-replace clean-non-alphabetical]]))
 
 ;; Rules to apply to the given word
 (def ^:private rules
@@ -47,4 +47,3 @@
   [word]
   (let [s (clojure.string/lower-case (clean-non-alphabetical word))]
     (clojure.string/upper-case (batch-replace s rules))))
-

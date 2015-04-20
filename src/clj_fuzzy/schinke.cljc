@@ -10,8 +10,8 @@
 ;;     and stem them into a name and verb form.
 ;;
 (ns clj-fuzzy.schinke
-  (:require clojure.string)
-  (:use [clj-fuzzy.helpers :only [clean-non-alphabetical
+  (:require clojure.string
+            [clj-fuzzy.helpers :refer [clean-non-alphabetical
                                   batch-replace
                                   re-test?
                                   in?]]))
