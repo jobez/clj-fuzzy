@@ -7,7 +7,7 @@
 ;;   Version: 0.1
 ;;
 (ns clj-fuzzy.phonetics
-  (:use clj-fuzzy.metaphone
+  (:require clj-fuzzy.metaphone
             clj-fuzzy.double-metaphone
             clj-fuzzy.soundex
             clj-fuzzy.nysiis
